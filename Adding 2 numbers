@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Add Two Numbers</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <h1>Business Registration Address Setup</h1>
+        </header>
+        <form>
+            <label>Number 1</label>
+            <input type="text" name="number1" id="number1" placeholder="Enter a single-digit number">
+            <br> +
+            <br>
+            <label>Number 2</label>
+            <input type="text" name="number2" id="number2" placeholder="Enter a single-digit number">
+            <br>
+            <button type="button" class="btn btn-info" onclick="calculateSum()">Submit</button>
+            <br><br>
+            <div class="screen" id="result"></div>
+        </form>
+    </div>
+
+    <script>
+        function calculateSum() {
+            var a = parseInt(document.getElementById("number1").value);
+            var b = parseInt(document.getElementById("number2").value);
+            var c = a + b;
+            document.getElementById("result").innerHTML = "Sum: " + c;
+        }
+    </script>
+</body>
+</html>
